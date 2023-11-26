@@ -1,5 +1,4 @@
 import { FaBraille } from 'react-icons/fa';
-import Menu2 from './Menu2';
 import HeroImg from '../assets/images/hero-img.png';
 const Menu = () => {
   return (

@@ -42,9 +42,11 @@ function Slider() {
           }
 
           return (
-            <article className={position} key={id}>
+            <div className='slider-container'>
+            <article className={` ${position}`} key={id}>
               <img src={image} alt={name} className="person-img" />
             </article>
+            </div>
           );
         })}
         <button className="prev" onClick={() => setIndex(index - 1)}>
