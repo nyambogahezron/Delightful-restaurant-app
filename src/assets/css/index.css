@@ -1,5 +1,4 @@
 @import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&family=Roboto:wght@400;500;700&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;500&display=swap');
 
 /*--------------------------------------------------------------
 # Global Styles
@@ -279,10 +278,11 @@ section {
 }
 .hero-info {
   display: block;
-  padding: 20px 0 20px 10x;
-  justify-content: space-between;
+  padding: 50px 0 20px 10x;
+  align-items: center;
+  justify-content: center;
 }
-.hero-info h2 {
+.hero-info span {
   font-size: var(--font-xlg);
   padding-top: 18px;
   position: relative;
@@ -292,6 +292,7 @@ section {
   text-transform: uppercase;
 }
 .hero-info p {
+  padding-top: 20px;
   font-family: cursive;
   color: var(--clr-grey-2);
   max-width: 80vh;
@@ -302,11 +303,9 @@ section {
   gap: 10px;
   position: relative;
   justify-content: center;
-  margin: 0 auto;
-  padding-bottom: 40px;
+  padding: 20px 40px;
 }
 .explore-btn {
-  margin-top: 20px;
   padding: 10px 25px;
   border-radius: 20px;
   background-color: var(--color-primary);
@@ -435,7 +434,7 @@ section {
 }
 
 .about {
-  margin-top: 30px;
+  margin-top: 40px;
   position: relative;
 }
 .about .about-heading {
@@ -462,6 +461,7 @@ section {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 500;
   line-height: 30px;
+  font-size: 1.2rem;
 }
 
 .about .right-content {
@@ -506,7 +506,7 @@ section {
 .why-us {
   background: url(../images/about.jpg);
   color: #fff;
-  padding: 50px 0 40px 0;
+  padding: 30px 0 40px 0;
 }
 .why-us-title-container {
   margin-left: 20px;
@@ -574,7 +574,7 @@ section {
 --------------------------------------------------------------*/
 .menu {
   margin-top: 50px;
-  padding: 50px 20px;
+  padding: 50px 5px;
   background: var(--clr-grey-1);
 }
 .menu #menu-filters {
@@ -734,12 +734,28 @@ section {
 /*--------------------------------------------------------------
 # Chefs
 --------------------------------------------------------------*/
+.chefs {
+  margin-top: 60px;
+  padding: 40px 0;
+}
+.chefs .section-min-title {
+  font-size: 2rem;
+  font-family: Arial, Helvetica, sans-serif;
+  font-style: italic;
+  color: var(--clr-primary-2);
+}
 .chefs .member {
   text-align: center;
   margin-bottom: 20px;
   background: #343a40;
   position: relative;
   overflow: hidden;
+}
+.chefs .member img {
+  opacity: 0.6;
+}
+.chefs .member img:hover {
+  opacity: 1;
 }
 
 .chefs .member .member-info {
@@ -780,19 +796,19 @@ section {
   bottom: -38px;
   right: 0;
   height: 48px;
-  transition: bottom ease-in-out 0.4s;
+  transition: top ease-in-out 0.4s;
   text-align: center;
 }
 
 .chefs .member .social a {
   transition: color 0.3s;
-  color: #fff;
+  color: blueviolet;
   margin: 0 10px;
   display: inline-block;
 }
 
 .chefs .member .social a:hover {
-  color: #cda45e;
+  color: #c28d33;
 }
 
 .chefs .member .social i {
@@ -802,10 +818,10 @@ section {
 
 .chefs .member:hover .member-info {
   background: linear-gradient(
-    0deg,
-    rgba(0, 0, 0, 0.9) 0%,
-    rgba(0, 0, 0, 0.8) 20%,
-    rgba(0, 212, 255, 0) 100%
+    30deg,
+    rgba(83, 22, 22, 0.9) 0%,
+    rgba(117, 9, 9, 0.8) 20%,
+    rgba(17, 103, 121, 0) 100%
   );
   opacity: 1;
   transition: 0.4s;
@@ -822,26 +838,38 @@ section {
 }
 
 /*--------------------------------------------------------------
-# RESPOSIVE DESIGN 
+# MOBILE VIEW DESIGN 
 --------------------------------------------------------------*/
 @media (max-width: 992px) {
   .hero {
     align-items: start;
+    margin-left: -12px;
   }
   .hero-info {
-    margin-top: 85px;
-    position: absolute;
-    display: flex;
-    transform: translate(-50%, -50%);
-    top: 40%;
-    left: 50%;
+    display: block;
+    padding-top: 30px;
+    background: url(../images/about.jpg);
+    background-position: center;
+    background-size: cover;
+    margin-left: -12px;
+    width: 100vw;
+    height: 85vh;
+  }
+  .hero-info p {
+    font-weight: 800;
+    font-size: 1.5rem;
+    color: #fff;
+  }
+  .hero-info span {
+    padding: 40px;
+    font-weight: 800;
+    font-size: 2.5rem;
+    color: #fff;
   }
   .hero-row {
     width: 100vw;
     height: 100vh;
-    background: url(../images/about.jpg);
-    background-position: center;
-    background-size: cover;
+    position: relative;
   }
   .slider {
     width: 100%;

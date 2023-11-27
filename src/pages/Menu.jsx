@@ -11,7 +11,7 @@ const Menu = () => {
               <FaBraille />
             </span>
           </div>
-          <Menu2 />
+          {/* <Menu2 /> */}
           <p className='menu-min-title pt-3'>Check Our Tasty Menu</p>
 
           <div className='row mt-4 mb-4'>
@@ -42,14 +42,11 @@ const Menu = () => {
       {/* ======= Specials Section ======= */}
       <div id='specials' className='specials'>
         <div className='container'>
-          <div className='section-title'>
-            <h2>
-              Check our <span>Specials</span>
-            </h2>
-            <p>
-              Ut possimus qui ut temporibus culpa velit eveniet modi omnis est
-              adipisci expedita at voluptas atque vitae autem.
-            </p>
+          <div className='title-container '>
+            <div className='section-title'>Our Specials</div>
+            <span>
+              <FaBraille />
+            </span>
           </div>
           <div className='row'>
             <div className='col-lg-3'>
