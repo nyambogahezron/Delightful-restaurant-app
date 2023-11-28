@@ -577,6 +577,9 @@ section {
   padding: 50px 5px;
   background: var(--clr-grey-1);
 }
+.menu-item{
+  padding: 10px;
+}
 .menu #menu-filters {
   padding: 0;
   margin: 0 auto 0 auto;
@@ -598,12 +601,15 @@ section {
   background: #fff;
   border: 2px solid #ffb03b;
   border-radius: 45px;
+  text-transform: capitalize;
 }
 
 .menu #menu-filters li:hover,
 .menu #menu-filters li.filter-active {
   color: #fff;
   background: #ffb03b;
+  border: 2px solid #FFF;
+
 }
 
 .menu #menu-filters li:last-child {
@@ -611,7 +617,7 @@ section {
 }
 
 .menu .menu-content {
-  margin-top: 15px;
+  margin-top: 5px;
   padding-left: 5px;
   overflow: hidden;
   display: flex;
@@ -619,7 +625,8 @@ section {
   position: relative;
 }
 .menu .menu-img {
-  width: 90px;
+  width: 100px;
+  height: 100px;
   border-radius: 50%;
   float: left;
   border: 5px solid rgba(255, 255, 255, 0.2);
@@ -632,7 +639,6 @@ section {
 
 .menu .menu-content::after {
   content: '......................................................................'
-    '....................................................................'
     '....................................................................';
   position: absolute;
   left: 20px;
@@ -647,6 +653,7 @@ section {
   padding-right: 10px;
   background: #fff;
   position: relative;
+  text-transform: capitalize;
   z-index: 3;
   font-weight: 700;
   color: #e68d09;
@@ -657,16 +664,25 @@ section {
   position: relative;
   z-index: 3;
   padding: 0 10px;
-  font-weight: 600;
+  font-weight: 700;
 }
 
 .menu .menu-ingredients {
   position: relative;
   font-style: italic;
-  font-size: 14px;
-  font-family: 'Comic Neue', sans-serif;
+  font-size: 12px;
+  font-family:cursive;
   color: #494744;
-  padding: 10px 15px;
+  margin-top: -10px;
+  padding: 0 85px;
+}
+.item-description{
+  font-size: 14px;
+  padding: 5px 0 2px 10px ;
+  font-family: revert;
+  font-weight: 700;
+  font-family: cursive;
+  color: var(--color-black-700);
 }
 
 /*--------------------------------------------------------------
@@ -1002,7 +1018,7 @@ section {
     font-size: 2rem;
   }
   .title-container span {
-    font-size: 2.5rem;
+    margin-top: -20px;
   }
   .section-title {
     font-size: 2.7rem;
@@ -1030,6 +1046,7 @@ section {
   }
   .title-container span {
     font-size: 2.5rem;
+    margin-top: 10px;
   }
   .section-title {
     font-size: 2.2rem;

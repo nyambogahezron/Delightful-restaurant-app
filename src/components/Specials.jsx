@@ -1,47 +1,9 @@
 import { FaBraille } from 'react-icons/fa';
-import HeroImg from '../assets/images/hero-img.png';
-const Menu = () => {
-  return (
-    <>
-      <div id='menu' className='menu section-bg'>
-        <div className='container-fluid'>
-          <div className='title-container '>
-            <div className='section-title'>Menu</div>
-            <span>
-              <FaBraille />
-            </span>
-          </div>
-          {/* <Menu2 /> */}
-          <p className='menu-min-title pt-3'>Check Our Tasty Menu</p>
 
-          <div className='row mt-4 mb-4'>
-            <div className='col-lg-12 d-flex justify-content-center'>
-              <ul id='menu-filters'>
-                <li className='filter-active'> All </li>
-                <li> All </li>
-                <li> All </li>
-              </ul>
-            </div>
-          </div>
-
-          <div className='row menu-container'>
-            <div className='col-lg-6 menu-item'>
-              <img src={HeroImg} className='menu-img' />
-              <div className='menu-content'>
-                <a href='#'>Lobster Bisque</a>
-                <span>$5.95</span>
-              </div>
-              <div className='menu-ingredients '>
-                Lorem, deren, trataro, filede, nerada
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-
-      {/* ======= Specials Section ======= */}
-      <div id='specials' className='specials'>
-        <div className='container'>
+const Specials = () => {
+	return(
+      <div id='specials' className='specials mt-4 mb-5'>
+        <div className=' container-fliud'>
           <div className='title-container '>
             <div className='section-title'>Our Specials</div>
             <span>
@@ -102,7 +64,7 @@ const Menu = () => {
                     </div>
                     <div className='col-lg-4 text-center order-1 order-lg-2'>
                       <img
-                        src='assets/img/specials-1.jpg'
+                        src='images/specials-1.png'
                         alt=''
                         className='img-fluid'
                       />
@@ -127,7 +89,7 @@ const Menu = () => {
                     </div>
                     <div className='col-lg-4 text-center order-1 order-lg-2'>
                       <img
-                        src='assets/img/specials-2.jpg'
+                        src='images/specials-2.png'
                         alt=''
                         className='img-fluid'
                       />
@@ -153,7 +115,7 @@ const Menu = () => {
                     </div>
                     <div className='col-lg-4 text-center order-1 order-lg-2'>
                       <img
-                        src='assets/img/specials-3.jpg'
+                        src='images/specials-3.png'
                         alt=''
                         className='img-fluid'
                       />
@@ -181,7 +143,7 @@ const Menu = () => {
                     </div>
                     <div className='col-lg-4 text-center order-1 order-lg-2'>
                       <img
-                        src='assets/img/specials-4.jpg'
+                        src='images/specials-4.png'
                         alt=''
                         className='img-fluid'
                       />
@@ -207,7 +169,7 @@ const Menu = () => {
                     </div>
                     <div className='col-lg-4 text-center order-1 order-lg-2'>
                       <img
-                        src='assets/img/specials-5.jpg'
+                        src='images/specials-5.png'
                         alt=''
                         className='img-fluid'
                       />
@@ -219,8 +181,6 @@ const Menu = () => {
           </div>
         </div>
       </div>
-    </>
-  );
-};
+	)};
 
-export default Menu;
+export default Specials;
