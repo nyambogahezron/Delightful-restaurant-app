@@ -308,6 +308,8 @@ section {
 .explore-btn {
   padding: 10px 25px;
   border-radius: 20px;
+  display: flex;
+  flex-wrap: nowrap;
   background-color: var(--color-primary);
   transition: all 0.3s ease;
 }
@@ -586,6 +588,8 @@ section {
   list-style: none;
   text-align: center;
   border-radius: 50px;
+  display: flex;
+  flex-wrap: nowrap;
 }
 
 .menu #menu-filters li {
@@ -863,23 +867,23 @@ section {
   }
   .hero-info {
     display: block;
-    padding-top: 30px;
+    padding: 60px 0;
     background: url(../images/about.jpg);
     background-position: center;
     background-size: cover;
-    margin-left: -12px;
     width: 100vw;
     height: 85vh;
   }
   .hero-info p {
-    font-weight: 800;
-    font-size: 1.5rem;
-    color: #fff;
+    font-weight: 900;
+    font-size: 2.3rem;
+    color: var(--color-primary);
+    
   }
   .hero-info span {
-    padding: 40px;
-    font-weight: 800;
-    font-size: 2.5rem;
+    padding: 60px 0;
+    font-weight: 900;
+    font-size: 3.4rem;
     color: #fff;
   }
   .hero-row {
@@ -1013,22 +1017,40 @@ section {
     z-index: 9996;
   }
 }
+@media (max-width: 630px) {
+  .hero-text{
+    margin-top: 90px;
+  }
+}
 @media (max-width: 500px) {
-  .title {
+   .hero-text span {
     font-size: 2rem;
   }
   .title-container span {
     margin-top: -20px;
   }
   .section-title {
-    font-size: 2.7rem;
+    font-size: 2.5rem;
     margin-left: 5px;
   }
-  .hero-text span {
-    font-size: 2rem;
+  .hero-text  {
+    margin-top: 130px;
+  }
+  .hero-info p{
+    color: var(--color-primary);
+    font-size: 1.2rem;
   }
   .book-service-btn {
     display: none;
+  }
+  .menu img{
+    margin-top: 25px;
+  }
+  .menu .menu-ingredients{
+    padding-left: 100px;
+  }
+  .menu .item-description{
+    padding-left: 100px;
   }
 }
 @media (min-width: 500px) {
@@ -1037,19 +1059,37 @@ section {
   }
 }
 
-@media (max-width: 387px) {
+@media (max-width: 450px) {
   .home-btns {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
   }
+  }
+
+@media (max-width: 387px) {
   .title {
     font-size: 1.8rem;
   }
   .title-container span {
-    font-size: 2.5rem;
+    font-size: 3rem;
     margin-top: 10px;
   }
   .section-title {
     font-size: 2.2rem;
     margin-left: 0;
   }
+}
+
+@media (max-width: 350px){
+   .menu img{
+    display: none;
+  }
+    .menu .menu-ingredients{
+    padding-left: 1px;
+  }
+  .menu .item-description{
+    padding-left: 1px;
+  }
+
 }
