@@ -437,6 +437,7 @@ section {
 
 .about {
   margin-top: 40px;
+  padding-bottom: 40px;
   position: relative;
 }
 .about .about-heading {
@@ -463,7 +464,7 @@ section {
   font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
   font-weight: 500;
   line-height: 30px;
-  font-size: 1.2rem;
+  font-size: 1rem;
 }
 
 .about .right-content {
@@ -694,15 +695,19 @@ section {
 --------------------------------------------------------------*/
 .specials {
   overflow: hidden;
+  margin: 0 10px;
 }
 
-.specials .nav-tabs {
-  border: 0;
+.title-container{
+  display: flex;
+  position: relative;
 }
 
-.specials .nav-link {
+.specials .tab-link {
   border: 0;
-  padding: 12px 15px 12px 0;
+  width: 100%;
+  margin-top: 10px;
+  padding: 12px 50px 12px 0;
   transition: 0.3s;
   color: #433f39;
   border-radius: 0;
@@ -711,18 +716,15 @@ section {
   font-size: 15px;
 }
 
-.specials .nav-link:hover {
-  color: #ffb03b;
+.specials .tab-link:hover {
+  color: var(--color-primary);
 }
 
-.specials .nav-link.active {
+.specials .nav-tabs .active {
   color: #ffb03b;
   border-color: #ffb03b;
 }
 
-.specials .tab-pane.active {
-  animation: fadeIn 0.5s ease-out;
-}
 
 .specials .details h3 {
   font-size: 26px;
@@ -737,19 +739,44 @@ section {
 
 .specials .details p:last-child {
   margin-bottom: 0;
+  font-family: cursive;
+
 }
 
 @media (max-width: 992px) {
-  .specials .nav-link {
+  .tabs-container{
+    display: flex;
+    flex-direction: column;
+  }
+  .tabs{
+   display: flex;
+   flex-direction: row ;
+   align-items: center;
+   justify-content: start;
+   text-align: center;
+   flex-wrap: wrap;
+   column-gap: 10px;
+  
+   }
+  .specials .tab-link {
     border: 0;
-    padding: 15px;
+    padding: 10px;
+    width: 140px;
   }
 
-  .specials .nav-link.active {
+  .specials .tab-link.active {
     color: #fff;
     background: #ffb03b;
   }
+  .specialImg img{
+    height: 130px;
+    width: 130px;
+  }
+  
 }
+
+
+
 
 /*--------------------------------------------------------------
 # Chefs
@@ -1074,6 +1101,7 @@ section {
   .title-container span {
     font-size: 3rem;
     margin-top: 10px;
+    display: none;
   }
   .section-title {
     font-size: 2.2rem;
