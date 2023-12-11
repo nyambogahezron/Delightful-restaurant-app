@@ -11,11 +11,8 @@ const Specials = () => {
   return (
     <div id='specials' className='specials mt-4 mb-5'>
       <div className=' container-fliud'>
-        <div className='title-container '>
-          <div className='section-title'>Our Specials</div>
-          <span>
-            <FaBraille />
-          </span>
+        <div className='p-3'>
+          <div className=' title'>Our Specials</div>
         </div>
         <div className='row tabs-container'>
           <div className=' tabs col-lg-3'>

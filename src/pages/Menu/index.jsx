@@ -1,5 +1,6 @@
 import { FaBraille } from 'react-icons/fa';
 import Specials from "../../components/Specials";
+import Chefs from '../../components/Chefs';
 import { useState } from 'react';
 import Menu from './Menu';
 import Categories from './Categories';
@@ -45,6 +46,7 @@ function MenuSection() {
       </div>
     </div>
     <Specials />
+    <Chefs />
     </>
   );
 }
