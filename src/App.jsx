@@ -2,12 +2,13 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import 'bootstrap/dist/js/bootstrap.bundle.min';
 import Popper from 'popper.js';
 import $ from 'jquery';
-import { BrowserRouter, Routes, Route, Link } from "react-router-dom"
 import './assets/css/index.css';
 import Home from './pages/Home';
 import About from './pages/About';
 import Services from './pages/Services';
 import Menu from './pages/Menu';
+import Contact from './pages/Contact';
+import Footer from './components/Footer';
 
 const App = () => {
   return (
@@ -16,6 +17,8 @@ const App = () => {
       <About />
       <Menu />
       <Services />
+      <Contact />
+      <Footer />
     </div>
   );
 };

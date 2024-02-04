@@ -17,19 +17,19 @@ const About = () => {
                   <h2>We Leave A Delicious Memory For You</h2>
                 </div>
                 <p>
-                  Vasha Cafe is one of the best and perfect place to experience
+                  Delightful is one of the best and perfect place to experience
                   a small part of Kenya’s natural beauty - guests can bird
                   watch, take guided colobus monkey walks, or just sit back to
                   enjoy an intimate lunch followed by a walk or bike ride in the
                   expansive forest. There is simply nowhere like it in Nairobi.
                   asha Café is located inside island game park-lake Naisha, one
-                  of the world’s largest game park .Vasha Café is an al fresco,
+                  of the world’s largest game park .Delightful is an al fresco,
                   all-day dining restaurant boasting panoramic lake views, with
                   wide, open spaces and high ceilings. It is simple and
                   welcoming, incorporating a menu that takes advantage of
                   Kenya’s wonderful produce. The menu features continental, à la
-                  carte fare including an all-day breakfast. Welcome to Vasha
-                  Café – naivasha.
+                  carte fare including an all-day breakfast. Welcome to Delightful
+                  Restaurant.
                 </p>
                 <div className='row about-images-2'>
                   <div className='col-4'>

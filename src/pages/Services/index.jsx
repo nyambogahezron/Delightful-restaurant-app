@@ -10,7 +10,9 @@ const Services = () => {
           <FaBraille />
         </span>
       </div>
-      <div className='service-title pt-3'>This are the services we over</div>
+      <div className='service-title pt-2 mx-2'>
+        This are the services we over
+      </div>
       <div className='services-container'>
         <div className='services-cards'>
           <div className='card'>
@@ -66,9 +68,7 @@ const Services = () => {
                 functionality. Lorem dolor sit amet consectetur adipisicing
                 elit.
               </p>
-              <button className='btn btn-primary'>
-              View More
-              </button>
+              <button className='btn btn-primary'>View More</button>
             </div>
           </div>
         </div>
