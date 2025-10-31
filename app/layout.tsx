@@ -1,34 +1,27 @@
-import './globals.css';
-import type { Metadata } from 'next';
-import { ThemeProvider } from '@/components/theme-provider';
-import Navbar from '@/components/layout/navbar';
-import Footer from '@/components/layout/footer';
+import type { Metadata } from 'next'
+import { Geist, Geist_Mono } from 'next/font/google'
+import { Analytics } from '@vercel/analytics/next'
+import './globals.css'
+
+const _geist = Geist({ subsets: ["latin"] });
+const _geistMono = Geist_Mono({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-	title: 'Savory - Fine Dining Restaurant',
-	description:
-		'Experience exquisite cuisine in an elegant atmosphere at Savory Restaurant',
-};
+  title: 'Delightful Restaurant',
+  description: 'A delightful restaurant experience with exquisite cuisine and ambiance.',
+}
 
 export default function RootLayout({
-	children,
-}: {
-	children: React.ReactNode;
-}) {
-	return (
-		<html lang='en' suppressHydrationWarning>
-			<body>
-				<ThemeProvider
-					attribute='class'
-					defaultTheme='light'
-					enableSystem
-					disableTransitionOnChange
-				>
-					<Navbar />
-					<main>{children}</main>
-					<Footer />
-				</ThemeProvider>
-			</body>
-		</html>
-	);
+  children,
+}: Readonly<{
+  children: React.ReactNode
+}>) {
+  return (
+    <html lang="en">
+      <body className={`font-sans antialiased`}>
+        {children}
+        <Analytics />
+      </body>
+    </html>
+  )
 }
